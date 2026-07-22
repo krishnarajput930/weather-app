@@ -1,7 +1,7 @@
 export default async (req) => {
     const city = new URL(req.url).searchParams.get("city");
 
-    const apiKey = Netlify.env.get("OPENWEATHER_API_KEY");
+    const apiKey = process.env.OPENWEATHER_API_KEY;
 
     if (!city) {
         return new Response(
