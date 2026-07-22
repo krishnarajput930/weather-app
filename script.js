@@ -317,7 +317,8 @@ function createWeatherAnimation(weather) {
 }
 async function getWeather(city) {
 
-    const url = `/.netlify/functions/weather?city=${city}`;
+    const url =
+    `/.netlify/functions/weather?city=${encodeURIComponent(city)}`;
     try {
         const response = await fetch(url);
         if (!response.ok) {
