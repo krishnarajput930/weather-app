@@ -52,7 +52,7 @@ const sunsetTime = document.getElementById("sunset-time");
 const weatherTip = document.getElementById("weather-tip");
 const dayNightIndicator =
     document.getElementById("day-night-indicator");
-const apiKey = "93b1dc84d134457491b6093130675be4";
+const apiKey = "93b1dc84d134457491b6093130675be4"; /*It is just for project display in case of security or better practice we can move it to lightweight backend proxy*/
 
 searchBtn.addEventListener("click", async () => {
 
